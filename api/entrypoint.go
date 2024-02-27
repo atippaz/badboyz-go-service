@@ -1,5 +1,6 @@
 package api
 import (
+	"fmt"
 "net/http"
 "github.com/gin-gonic/gin")
 
@@ -22,7 +23,10 @@ func init(){
 	app = gin.New()
 	r := app.Group("/api")
 	myRoute(r)
+fmt.Println("init")
+
 }
 func Handler(w http.ResponseWriter,r *http.Request){
 app.ServeHTTP(w,r)
+fmt.Println("handler")
 }
