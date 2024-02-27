@@ -9,7 +9,12 @@ var (
 func myRoute(r *gin.RouterGroup){
 	r.GET("/test",func(c *gin.Context){
 		c.JSON(http.StatusOK,gin.H{
-			"message":"Hello world",
+			"message":"Hello Test",
+		})
+	})
+	r.GET("/",func(c *gin.Context){
+		c.JSON(http.StatusOK,gin.H{
+			"message":"Index",
 		})
 	})
 }
