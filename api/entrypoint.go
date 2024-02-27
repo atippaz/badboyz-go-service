@@ -7,7 +7,7 @@ var (
 	app *gin.Engine
 )
 func myRoute(r *gin.RouterGroup){
-	r.GET("/",func(c *gin.Context){
+	r.GET("/test",func(c *gin.Context){
 		c.JSON(http.StatusOK,gin.H{
 			"message":"Hello world",
 		})
