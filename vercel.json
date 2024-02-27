@@ -1,4 +1,4 @@
 {
   "trailingSlash": false,
-  "rewrites": [{ "souce": "/api(.*)", "destination": "/api/enteypoint.go" }]
+  "rewrites": [{ "source": "/api(.*)", "destination": "/api/enteypoint.go" }]
 }
