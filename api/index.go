@@ -1,10 +1,10 @@
-package main
+package handler
 import (
 	"fmt"
 "net/http"
 "github.com/gin-gonic/gin")
 
-func main(){
+func Handler(){
 	fmt.Println("Hello world")
 	r := gin.New()
 	r.GET("/",func(c *gin.Context){
