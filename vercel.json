@@ -1,7 +1,4 @@
 {
-  "build": {
-    "env": {
-      "GO_BUILD_FLAGS": "-ldflags '-s -w'"
-    }
-  }
+  "trailingSlash": false,
+  "rewrites": [{ "souce": "/api(.*)", "destination": "/api/enteypoint.go" }]
 }
